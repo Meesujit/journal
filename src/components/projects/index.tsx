@@ -82,7 +82,7 @@ export default function Projects() {
         : projects.slice(0, INITIAL_VISIBLE);
 
     return (
-        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white">
+        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white" id="projects">
 
             {/* Header */}
             <header className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">

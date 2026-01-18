@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] bg-white px-4 text-center dark:bg-black ">
+    <section className="flex flex-col items-center justify-center min-h-[80vh] bg-white px-4 text-center dark:bg-black " id="home">
       <div className="container mx-auto flex flex-col items-center gap-6">
         <div className="">
           <Image

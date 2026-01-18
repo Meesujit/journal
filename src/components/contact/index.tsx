@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Contact() {
     return (
-        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white">
+        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white" id="contact">
 
             {/* Header */}
             <header className="mb-12">

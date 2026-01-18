@@ -83,7 +83,7 @@ const techStack = [
 
 export default function TechStack() {
     return (
-        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white">
+        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white" id="tech-stack">
 
             {/* Header */}
             <header className="mb-12">

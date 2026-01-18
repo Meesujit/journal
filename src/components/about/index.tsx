@@ -52,7 +52,7 @@ const experience = [
 
 export default function About() {
     return (
-        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white">
+        <section className="mx-auto min-h-screen px-6 py-16 bg-white text-black dark:bg-black dark:text-white" id="about">
             {/* Heading */}
             <header className="mb-16">
                 <h1 className="text-4xl font-bold tracking-tight">About Me</h1>

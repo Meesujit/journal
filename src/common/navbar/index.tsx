@@ -28,9 +28,9 @@ export function Navbar() {
         <div className="hidden md:flex flex-1 justify-center gap-6">
           {[
             { href: "/", label: "Home" },
-            { href: "/about", label: "About" },
-            { href: "/projects", label: "Projects" },
-            { href: "/contact", label: "Contact" },
+            { href: "#about", label: "About" },
+            { href: "#projects", label: "Projects" },
+            { href: "#contact", label: "Contact" },
           ].map((link) => (
             <Link
               key={link.href}
