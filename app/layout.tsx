@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/src/common/navbar";
 import { ThemeProvider } from "@/src/components/theme/theme-provider";
 import Footer from "@/src/common/footer";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -27,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-  <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased alata-regular tracking-wider  bg-white text-black dark:bg-black dark:text-white`}
       >
@@ -37,8 +38,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />          
+          <Navbar />
           {children}
+          <Script
+            src="/oneko.js"
+            strategy="afterInteractive"
+          />
           <Footer />
         </ThemeProvider>
       </body>

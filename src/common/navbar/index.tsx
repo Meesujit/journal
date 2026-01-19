@@ -33,11 +33,12 @@ export function Navbar() {
             { href: "/#contact", label: "Contact" },
           ].map((link) => (
             <Link
-              key={link.href}
+              key={link.label}
               href={link.href}
-              className="text-xl font-semibold text-zinc-700 transition-colors hover:text-black hover:font-bold dark:text-zinc-300 dark:hover:text-white"
-            >
+              className={`text-xl font-semibold text-zinc-700 transition-colors hover:text-black hover:font-bold dark:text-zinc-300 dark:hover:text-white`}
+              >
               {link.label}
+              
             </Link>
           ))}
         </div>
