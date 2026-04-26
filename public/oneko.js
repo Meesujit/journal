@@ -135,7 +135,7 @@
     });
     
     if (persistPosition) {
-      window.addEventListener("beforeunload", function (event) {
+      window.addEventListener("beforeunload", function () {
         window.localStorage.setItem("oneko", JSON.stringify({
           nekoPosX: nekoPosX,
           nekoPosY: nekoPosY,

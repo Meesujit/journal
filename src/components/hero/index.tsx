@@ -15,7 +15,7 @@ export default function Hero() {
         </div>
         <div className="">
           <h1 className="text-4xl font-bold text-black dark:text-white sm:text-5xl">
-            Hi, I'm <span className="satisfy-regular">Sujit Gouda !!</span>
+            Hi, I&apos;m <span className="satisfy-regular">Sujit Gouda !!</span>
           </h1>
           <p className="mt-4 text-2xl text-black dark:text-white/70">
             24yo developer.

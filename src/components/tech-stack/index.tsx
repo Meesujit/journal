@@ -1,31 +1,4 @@
-import {
-    SiJavascript,
-    SiTypescript,
-    SiHtml5,
-    SiCss3,
-    SiReact,
-    SiNextdotjs,
-    SiTailwindcss,
-    SiMui,
-    SiStyledcomponents,
-    SiNodedotjs,
-    SiExpress,
-    SiSupabase,
-    SiMongodb,
-    SiGooglecloud,
-    SiVercel,
-    SiCloudflare,
-    SiNetlify,
-    SiDocker,
-    SiLinux,
-    SiFirebase,
-    SiGit,
-    SiGithub,
-    SiPostman,
-    SiNpm,
-    SiVim,
-    SiLazyvim,
-} from "react-icons/si";
+import { SiCloudflare, SiCss, SiDocker, SiExpress, SiFirebase, SiGit, SiGithub, SiGooglecloud, SiHtml5, SiJavascript, SiLazyvim, SiLinux, SiMongodb, SiMui, SiNetlify, SiNextdotjs, SiNodedotjs, SiNpm, SiPostman, SiReact, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript, SiVercel, SiVim } from "react-icons/si";
 
 const techStack = [
     {
@@ -34,7 +7,7 @@ const techStack = [
             { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
             { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
             { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-            { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+            { name: "CSS3", icon: SiCss, color: "#1572B6" },
         ],
     },
     {

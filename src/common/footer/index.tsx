@@ -2,10 +2,10 @@ import Link from "next/link";
 import { RiTwitterXFill } from "react-icons/ri";
 import {
   SiGithub,
-  SiLinkedin,
   SiInstagram,
   SiGmail,
 } from "react-icons/si";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 
 export const CONTACT = {
@@ -18,7 +18,6 @@ export const CONTACT = {
     twitter: "https://twitter.com/sujit6ouda",
   },
 };
-
 
 export default function Footer() {
   return (
@@ -49,7 +48,7 @@ export default function Footer() {
             aria-label="LinkedIn"
             className="text-zinc-600 transition hover:text-[#0A66C2] dark:text-zinc-400"
           >
-            <SiLinkedin className="h-5 w-5" />
+            <SlSocialLinkedin className="h-5 w-5" />
           </Link>
 
           <Link
