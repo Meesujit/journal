@@ -11,6 +11,7 @@ import {
   Users, Code, X, Lock,
 } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import type { GraphData, GraphLink, GraphNode, GithubCommit, GithubUser } from "@/src/type";
 
 // ─── Node accent colours (same in both themes) ───────────────────────────────
@@ -106,7 +107,7 @@ function ProfilePanel({ node, allCommits, t }: { node: GraphNode; allCommits: Gi
   return (
     <div>
       <div style={{ display: "flex", gap: 14, alignItems: "center", marginBottom: 16, paddingBottom: 16, borderBottom: `1px solid ${t.border}` }}>
-        <img src={u.avatar_url} alt={u.login} style={{ width: 56, height: 56, borderRadius: "50%", border: `2px solid ${t.borderBright}` }} />
+        <Image src={u.avatar_url} alt={u.login} width={56} height={56} style={{ borderRadius: "50%", border: `2px solid ${t.borderBright}` }} />
         <div>
           <div style={{ fontSize: 16, fontWeight: 700, color: t.text }}>{u.name ?? u.login}</div>
           <div style={{ fontSize: 12, color: t.textDim }}>@{u.login}</div>
@@ -228,7 +229,10 @@ export default function GitHubGraph({ graphData, user }: GraphProps) {
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => { setMounted(true); }, []);
+  useEffect(() => { 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true); 
+  }, []);
 
   const isDark = resolvedTheme === "dark";
   const t = tokens(isDark);
@@ -298,7 +302,7 @@ export default function GitHubGraph({ graphData, user }: GraphProps) {
       {/* ── Header ── */}
       <div style={{ borderBottom: `1px solid ${t.border}`, padding: "14px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", background: t.surface, flexShrink: 0 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <img src={user.avatar_url} alt={user.login} style={{ width: 36, height: 36, borderRadius: "50%", border: `2px solid ${t.borderBright}` }} />
+          <Image src={user.avatar_url} alt={user.login} width={36} height={36} style={{ borderRadius: "50%", border: `2px solid ${t.borderBright}` }} />
           <div>
             <div style={{ fontSize: 14, fontWeight: 700, color: t.text, lineHeight: 1 }}>{user.name ?? user.login}</div>
             <div style={{ fontSize: 11, color: t.textDim, marginTop: 2 }}>@{user.login} · Graph Explorer</div>

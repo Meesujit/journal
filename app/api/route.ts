@@ -74,8 +74,8 @@ export async function GET() {
       headers: ghHeaders(),
       next: { revalidate: 600 },
     });
-    const orgs = await orgsRes.json();
-    console.log(`[github-api] Organizations found: ${orgs.map((o: any) => o.login).join(", ")}`);
+    const orgs: { login: string }[] = await orgsRes.json();
+    console.log(`[github-api] Organizations found: ${orgs.map((o) => o.login).join(", ")}`);
 
     // ── 3. ALL repos the token can see (public + private) ────────────────────
     //    /user/repos?visibility=all&affiliation=owner,collaborator,organization_member
