@@ -8,7 +8,7 @@ import { ModeToggle } from "@/src/components/theme/mode-toggle";
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur dark:bg-black/80">
-      <nav className="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto flex h-16 max-w-auto items-center px-4 sm:px-6 lg:px-8">
         {/* Left – Logo / Brand */}
         <div className="flex flex-1">
           <Link
@@ -32,8 +32,9 @@ export function Navbar() {
             { href: "/#about", label: "Experience" },
             { href: "/#projects", label: "Projects" },
             { href: '/about', label: 'About' },
+            { href: "/blog", label: "Blog" },
+            { href: '/git-profile', label: 'Git Profile' },
             { href: "/#contact", label: "Contact" },
-            { href: '/git-profile', label: 'GitHub' },
           ].map((link) => (
             <Link
               key={link.label}
