@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import { buildGraph, type GraphData, type GithubUser } from "@/src/type";
 import { useEffect, useState } from "react";
 
+export const runtime = "edge";
+
 const GitHubGraph = dynamic(() => import("@/src/components/graph"), { ssr: false });
 
 type State =

@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import type { GithubRepo, GithubCommit, GithubUser } from "@/src/type";
 
+export const runtime = "edge";
+
 const BASE = "https://api.github.com";
 
 function ghHeaders() {

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+
 import { ModeToggle } from "@/src/components/theme/mode-toggle";
 
 export function Navbar() {
