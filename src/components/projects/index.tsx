@@ -6,6 +6,13 @@ import { LayoutGrid, List } from "lucide-react";
 
 const projects = [
     {
+        title: "Sounf",
+        tag: 'Noisiv Consulting',
+        description: "Sounf is an all-in-one marketing SaaS designed to help digital marketers simplify campaigns, boost engagement, and drive measurable results.",
+        tech: ["Vite", "Node.js", "REST API", "Mongodb", "Postman","Styled Components"],
+        link: 'https://sounf.noisivconsulting.com'
+    },    
+    {
         title: "Compare Shiksha",
         description: "A comprehensive platform for students to compare and choose the best educational institutions based on various criteria such as courses, fees, location, and reviews.",
         tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Cloudflare"],
@@ -35,7 +42,7 @@ const projects = [
         tag: "Freelance",
         description:
             "A sleek and modern website for a Wedding film studio, showcasing their portfolio, services, and contact information with engaging visuals.",
-        tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "Vercel"],
+        tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "Vercel", "Firebase"],
         link: "https://filter-film-wedding.vercel.app",
     },
     {
