@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import Link from "next/link";
 import { getPostData, getSortedPostsData } from "@/lib/blog";
 import { notFound } from "next/navigation";
