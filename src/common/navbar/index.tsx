@@ -1,49 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 import { ModeToggle } from "@/src/components/theme/mode-toggle";
 
+const LINKS = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
+  { href: "/resume", label: "Resume" },
+];
+
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur dark:bg-black/80">
-      <nav className="mx-auto flex h-16 max-w-auto items-center px-4 sm:px-6 lg:px-8">
-        {/* Left – Logo / Brand */}
-        <div className="flex flex-1">
-          <Link
-            href="/"
-            className="text-lg font-semibold text-black dark:text-white absolute top-1/2 left-0 -translate-y-1/2 flex items-center "
-          >
-            <Image
-              src="/nyancat.svg"
-              alt="Logo"
-              width={40}
-              height={40}
-              className="w-1/2 h-full"
-            />
-          </Link>
-        </div>
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-background dark:border-zinc-800">
+      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+        <Link href="/" className="font-serif text-lg text-black dark:text-white">
+          sujit gouda
+        </Link>
 
-        <div className="hidden md:flex flex-1 justify-center gap-6">
-          {[
-            { href: "/", label: "Home" },
-            { href: '/about', label: 'About' },
-            { href: "/blog", label: "Blog" },
-          ].map((link) => (
+        <div className="flex items-center gap-6">
+          {LINKS.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className={`text-xl font-semibold text-zinc-700 transition-colors hover:text-black hover:font-bold dark:text-zinc-300 dark:hover:text-white`}
-              >
+              className="text-sm text-zinc-600 transition-colors hover:text-black dark:text-zinc-400 dark:hover:text-white"
+            >
               {link.label}
-              
             </Link>
           ))}
-        </div>
-
-        {/* Right – Theme Toggle */}
-        <div className="flex flex-1 justify-end">
           <ModeToggle />
         </div>
       </nav>

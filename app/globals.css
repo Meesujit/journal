@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Satisfy&family=Special+Gothic:wght@400..700&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
+  --background: #faf9f6;
   --foreground: oklch(0.145 0 0);
   --radius: 0.625rem;
   --card: oklch(1 0 0);
@@ -44,6 +43,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-lora);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -82,18 +82,11 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -140,29 +133,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-.satisfy-regular {
-  font-family: "Satisfy", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.alata-regular {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.special-gothic {
-  font-family: "Special Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
 
 /* ── Code blocks ── */
 .blog-content pre {

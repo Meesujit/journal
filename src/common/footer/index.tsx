@@ -21,7 +21,7 @@ export const CONTACT = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-200 bg-white px-6 py-10 text-black dark:border-zinc-800 dark:bg-black dark:text-white">
+    <footer className="border-t border-zinc-200 bg-background px-6 py-10 text-black dark:border-zinc-800 dark:text-white">
       <div className="mx-auto max-w-6xl flex flex-col gap-8">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           {/* Quick Links */}
@@ -29,7 +29,6 @@ export default function Footer() {
             {[
               { href: "/#about", label: "Experience" },
               { href: "/#projects", label: "Projects" },
-              { href: "/git-profile", label: "Git Profile" },
               { href: "/#contact", label: "Contact" },
             ].map((link) => (
               <Link

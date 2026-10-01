@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Lora } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/src/common/navbar";
 import { ThemeProvider } from "@/src/components/theme/theme-provider";
 import Footer from "@/src/common/footer";
-import Script from "next/script";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +12,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
 });
 
@@ -30,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased alata-regular tracking-wider  bg-white text-black dark:bg-black dark:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} antialiased bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="class"
@@ -40,10 +43,6 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
-          <Script
-            src="/oneko.js"
-            strategy="afterInteractive"
-          />
           <Footer />
         </ThemeProvider>
       </body>
