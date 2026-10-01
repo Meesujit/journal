@@ -13,7 +13,7 @@ export const CONTACT = {
   email: "sujit.gda997@gmail.com",
   socials: {
     github: "https://github.com/Meesujit/",
-    linkedin: "https://linkedin.com/in/",
+    linkedin: "https://linkedin.com/in/mesujit",
     instagram: "https://instagram.com/sujit.kumar.gouda",
     twitter: "https://twitter.com/sujit6ouda",
   },

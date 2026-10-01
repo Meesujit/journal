@@ -39,22 +39,23 @@ export const projects = [
 export const experience = [
   {
     period: "Jul 2025 — Present",
-    role: "Web Developer",
+    role: "Software Engineer",
     company: "Eduplor India",
     description:
-      "Building and maintaining EduCollege — university pages, lead forms, chatbots, and CRM integration.",
+      "Building and maintaining EduCollege, EduCollege HRMS, and a self-hosted EspoCRM — lead-capture flows, internal systems, and CI/CD.",
   },
   {
-    period: "Nov 2025 — Present",
+    period: "Sep 2025 — Present",
     role: "Freelance Full Stack Developer",
     company: "Independent Client Work",
-    description: "Websites for small businesses using Next.js and Tailwind CSS.",
+    description:
+      "10+ client applications across real estate, hospitality, legal, and creative sectors, end to end.",
   },
   {
-    period: "Aug 2024 — Mar 2025",
-    role: "SDE Intern",
+    period: "Aug 2024 — May 2025",
+    role: "Software Engineer Intern",
     company: "Noisiv Consulting",
-    description: "Internal tools built with React and Vite.",
+    description: "Built a React training platform and internal tooling on a Swagger-documented REST API.",
   },
 ] as const;
 
