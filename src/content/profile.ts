@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Anchor",
+    tag: "SHIPPED",
+    description:
+      "Self-hosted bookmark vault — auto-fetched metadata, nested folders, notes linked to bookmarks, and a real draggable graph view. Deployed as a full Next.js app (SSR + API routes) on Cloudflare Workers via OpenNext, with GitHub Actions auto-deploy.",
+    href: "https://anchor.dolphinlab.site",
+  },
+  {
     title: "EduCollege",
     tag: "ONGOING",
     description:
