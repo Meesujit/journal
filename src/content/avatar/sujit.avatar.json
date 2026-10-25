@@ -8,63 +8,63 @@
       "width": 220,
       "height": 220,
       "depth": 220,
-      "roundness": 0.35
+      "roundness": 0.62
     },
     "nodes": []
   },
   "colors": {
-    "body": "#1f6feb",
-    "eyes": "#0a0f1a"
+    "body": "#5b93f5",
+    "eyes": "#132035"
   },
   "expressions": {
     "neutral": {
       "head": { "x": 0, "y": 0, "z": 0 },
       "eyes": {
-        "left": { "width": 26, "height": 30, "x": -38, "y": -6, "angle": 0 },
-        "right": { "width": 26, "height": 30, "x": 38, "y": -6, "angle": 0 },
-        "spacing": 76
+        "left": { "width": 34, "height": 34, "x": -32, "y": 2, "angle": 0 },
+        "right": { "width": 34, "height": 34, "x": 32, "y": 2, "angle": 0 },
+        "spacing": 64
       },
-      "perspective": 2.4,
+      "perspective": 2.8,
       "motion": { "eyes": "microSaccades", "body": "none" }
     },
     "look-left": {
       "head": { "x": -4, "y": -15, "z": -4 },
       "eyes": {
-        "left": { "width": 26, "height": 30, "x": -38, "y": -6, "angle": 0 },
-        "right": { "width": 26, "height": 30, "x": 38, "y": -6, "angle": 0 },
-        "spacing": 76
+        "left": { "width": 34, "height": 34, "x": -32, "y": 2, "angle": 0 },
+        "right": { "width": 34, "height": 34, "x": 32, "y": 2, "angle": 0 },
+        "spacing": 64
       },
-      "perspective": 2.4,
+      "perspective": 2.8,
       "motion": { "eyes": "none", "body": "none" }
     },
     "look-right": {
       "head": { "x": -4, "y": 15, "z": 4 },
       "eyes": {
-        "left": { "width": 26, "height": 30, "x": -38, "y": -6, "angle": 0 },
-        "right": { "width": 26, "height": 30, "x": 38, "y": -6, "angle": 0 },
-        "spacing": 76
+        "left": { "width": 34, "height": 34, "x": -32, "y": 2, "angle": 0 },
+        "right": { "width": 34, "height": 34, "x": 32, "y": 2, "angle": 0 },
+        "spacing": 64
       },
-      "perspective": 2.4,
+      "perspective": 2.8,
       "motion": { "eyes": "none", "body": "none" }
     },
     "thinking": {
       "head": { "x": 10, "y": -18, "z": 10 },
       "eyes": {
-        "left": { "width": 24, "height": 20, "x": -38, "y": -10, "angle": -6 },
-        "right": { "width": 24, "height": 20, "x": 38, "y": -10, "angle": 6 },
-        "spacing": 76
+        "left": { "width": 30, "height": 24, "x": -32, "y": -2, "angle": -6 },
+        "right": { "width": 30, "height": 24, "x": 32, "y": -2, "angle": 6 },
+        "spacing": 64
       },
-      "perspective": 2.4,
+      "perspective": 2.8,
       "motion": { "eyes": "none", "body": "slowDrift" }
     },
     "talking": {
       "head": { "x": 0, "y": 0, "z": 0 },
       "eyes": {
-        "left": { "width": 28, "height": 24, "x": -38, "y": -4, "angle": 0 },
-        "right": { "width": 28, "height": 24, "x": 38, "y": -4, "angle": 0 },
-        "spacing": 76
+        "left": { "width": 36, "height": 38, "x": -32, "y": 4, "angle": 0 },
+        "right": { "width": 36, "height": 38, "x": 32, "y": 4, "angle": 0 },
+        "spacing": 64
       },
-      "perspective": 2.4,
+      "perspective": 2.8,
       "motion": { "eyes": "microSaccades", "body": "shake" }
     }
   },
