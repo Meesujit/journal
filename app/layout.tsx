@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navbar } from "@/src/common/navbar";
 import { ThemeProvider } from "@/src/components/theme/theme-provider";
 import Footer from "@/src/common/footer";
+import ChatWidget from "@/src/components/chat/chat-widget";
+import "@bible-strong/avatar-react/styles.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +46,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <ChatWidget />
         </ThemeProvider>
       </body>
     </html>
