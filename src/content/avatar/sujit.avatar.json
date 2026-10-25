@@ -8,7 +8,7 @@
       "width": 220,
       "height": 220,
       "depth": 220,
-      "roundness": 1
+      "roundness": 0.35
     },
     "nodes": []
   },
@@ -24,36 +24,59 @@
         "right": { "width": 26, "height": 30, "x": 38, "y": -6, "angle": 0 },
         "spacing": 76
       },
-      "perspective": 3,
+      "perspective": 2.4,
       "motion": { "eyes": "microSaccades", "body": "none" }
     },
+    "look-left": {
+      "head": { "x": -4, "y": -15, "z": -4 },
+      "eyes": {
+        "left": { "width": 26, "height": 30, "x": -38, "y": -6, "angle": 0 },
+        "right": { "width": 26, "height": 30, "x": 38, "y": -6, "angle": 0 },
+        "spacing": 76
+      },
+      "perspective": 2.4,
+      "motion": { "eyes": "none", "body": "none" }
+    },
+    "look-right": {
+      "head": { "x": -4, "y": 15, "z": 4 },
+      "eyes": {
+        "left": { "width": 26, "height": 30, "x": -38, "y": -6, "angle": 0 },
+        "right": { "width": 26, "height": 30, "x": 38, "y": -6, "angle": 0 },
+        "spacing": 76
+      },
+      "perspective": 2.4,
+      "motion": { "eyes": "none", "body": "none" }
+    },
     "thinking": {
-      "head": { "x": 4, "y": -6, "z": 6 },
+      "head": { "x": 10, "y": -18, "z": 10 },
       "eyes": {
         "left": { "width": 24, "height": 20, "x": -38, "y": -10, "angle": -6 },
         "right": { "width": 24, "height": 20, "x": 38, "y": -10, "angle": 6 },
         "spacing": 76
       },
-      "perspective": 3,
+      "perspective": 2.4,
       "motion": { "eyes": "none", "body": "slowDrift" }
     },
     "talking": {
-      "head": { "x": 0, "y": 2, "z": 0 },
+      "head": { "x": 0, "y": 0, "z": 0 },
       "eyes": {
         "left": { "width": 28, "height": 24, "x": -38, "y": -4, "angle": 0 },
         "right": { "width": 28, "height": 24, "x": 38, "y": -4, "angle": 0 },
         "spacing": 76
       },
-      "perspective": 3,
+      "perspective": 2.4,
       "motion": { "eyes": "microSaccades", "body": "shake" }
     }
   },
-  "expressionOrder": ["neutral", "thinking", "talking"],
+  "expressionOrder": ["neutral", "look-left", "look-right", "thinking", "talking"],
   "animations": {
     "idle": {
       "playbackMode": "loop",
       "steps": [
-        { "expression": "neutral", "holdMs": 4000, "transitionMs": 600, "transition": "smooth" }
+        { "expression": "neutral", "holdMs": 2600, "transitionMs": 700, "transition": "spring" },
+        { "expression": "look-right", "holdMs": 1800, "transitionMs": 700, "transition": "spring" },
+        { "expression": "neutral", "holdMs": 2600, "transitionMs": 700, "transition": "spring" },
+        { "expression": "look-left", "holdMs": 1800, "transitionMs": 700, "transition": "spring" }
       ],
       "blink": {
         "enabled": true,

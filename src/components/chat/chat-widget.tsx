@@ -123,7 +123,7 @@ export default function ChatWidget() {
         {open ? (
           <MessageCircle className="h-6 w-6 text-zinc-500" />
         ) : (
-          <SujitAvatar ref={avatarRef} defaultAnimation="idle" size={48} ariaLabel="Chat with Sujit's assistant" />
+          <SujitAvatar ref={avatarRef} defaultAnimation="idle" size={58} ariaLabel="Chat with Sujit's assistant" />
         )}
       </button>
     </div>
